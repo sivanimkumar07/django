@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+h1 {
+    color: darkblue;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+}
