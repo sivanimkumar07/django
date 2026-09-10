@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+
+    <nav>
+        <a href="/">Gallery</a> |
+        <a href="/contact/">Contact</a>
+    </nav>
+
+    <h1>Contact Me</h1>
+
+    <p>
+        Thank you for visiting my website. Feel free to get in touch.
+    </p>
+
+    <button onclick="showMessage()">Send Message</button>
+
+    <p id="message"></p>
+
+    <script src="{% static 'js/script.js' %}"></script>
+
+</body>
+
+</html>
