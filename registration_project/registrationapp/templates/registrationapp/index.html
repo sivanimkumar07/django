@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Registration Form</h1>
+
+    <form method="POST">
+
+        {% csrf_token %}
+
+        <p>
+            Full Name:
+            {{ form.full_name }}
+            <br>
+            {{ form.full_name.errors }}
+        </p>
+
+        <p>
+            Email:
+            {{ form.email }}
+            <br>
+            {{ form.email.errors }}
+        </p>
+
+        <p>
+            Password:
+            {{ form.password }}
+            <br>
+            {{ form.password.errors }}
+        </p>
+
+        <button type="submit">
+            Register
+        </button>
+
+    </form>
+
+</body>
+
+</html>
