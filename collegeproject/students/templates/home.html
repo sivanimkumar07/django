@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+
+<h1>College System</h1>
+
+<a href="{% url 'students:student_list' 'Welcome Students' %}">
+    Students
+</a>
+
+<br><br>
+
+<a href="{% url 'teachers:teacher_list' 'Welcome Teachers' %}">
+    Teachers
+</a>
+
+</body>
+</html>
