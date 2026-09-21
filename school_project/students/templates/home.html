@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students</title>
+</head>
+<body>
+
+<h1>Student Records</h1>
+
+<a href="{% url 'add_student' %}">
+    Add Student
+</a>
+
+<br><br>
+
+<form method="GET">
+
+    <input
+        type="text"
+        name="search"
+        placeholder="Search Student"
+    >
+
+    <button type="submit">
+        Search
+    </button>
+
+</form>
+
+<hr>
+
+{% for student in students %}
+
+<p>
+
+    Name :
+    {{ student.name }}
+
+    <br>
+
+    Class :
+    {{ student.student_class }}
+
+    <br>
+
+    Age :
+    {{ student.age }}
+
+    <br><br>
+
+    <a href="{% url 'edit_student' student.id %}">
+        Edit
+    </a>
+
+    |
+
+    <a href="{% url 'delete_student' student.id %}">
+        Delete
+    </a>
+
+</p>
+
+<hr>
+
+{% empty %}
+
+<p>No Students Found</p>
+
+{% endfor %}
+
+</body>
+</html>
