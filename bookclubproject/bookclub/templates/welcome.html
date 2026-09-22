@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+</head>
+<body>
+
+{% include 'navbar.html' %}
+
+<h1>Welcome {{ request.user.username }}</h1>
+
+<p>
+    You have visited this page
+    {{ count }}
+    times during this session.
+</p>
+
+</body>
+</html>
